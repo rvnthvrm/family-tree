@@ -1,0 +1,113 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#FFF5E4', 'edgeLabelBackground':'#FFF', 'fontFamily': 'verdana'}}}%%
+flowchart TD
+    %% Color Definitions
+    classDef root fill:#FFD700,stroke:#DAA520,stroke-width:3px;
+    classDef branch1 fill:#B0E0E6,stroke:#1E90FF,stroke-width:2px;
+    classDef branch2 fill:#98FB98,stroke:#2E8B57,stroke-width:2px;
+    classDef branch3 fill:#FFB6C1,stroke:#FF0000,stroke-width:2px;
+    classDef cross fill:none,stroke:#0000FF,stroke-width:3px,stroke-dasharray:3 3;
+
+    %% ROOT GENERATION - CENTER
+    ROOT["<b>Yesireddy Laxminarayana & Yellamma</b>"]:::root
+
+    %% BRANCHES - CIRCULAR LAYOUT
+    ROOT --> GP1["<b>Yesireddy Rajalingam & Kamalamma</b>"]:::branch1
+    ROOT --> GP2["<b>Yesireddy Eshwaraiah & Savithriamma</b>"]:::branch2
+    ROOT --> GP3["<b>Yesireddy Janardhan & Yeshodhamma</b>"]:::branch3
+
+    %% BRANCH 1 - LEFT CIRCLE
+    GP1 --> C1A["Medishetty Swarojini & Raghollu"]:::branch1
+    GP1 --> C1B["Bedadha Swathanthra & Chennaiah"]:::branch1
+
+    C1A --> G1A["Rajesh & Raja"]:::branch1
+    G1A --> Sai("Sai"):::branch1
+    G1A --> Swathi("Swathi"):::branch1
+    G1A --> Sahithi("Sahithi"):::branch1
+
+    C1A --> G1B["Deepa & Sathish"]:::branch1
+    G1B --> Ashwith("Ashwith"):::branch1
+    G1B --> Vihan("Vihan"):::branch1
+
+    C1B --> G1C["Yesireddy Neeraja"]:::branch1
+    C1B --> G1D["Anil & Prashanthi"]:::branch1
+    G1D --> Pragnya("Pragnya"):::branch1
+    G1D --> Akshaya("Akshaya Sri"):::branch1
+
+    C1B --> G1E["Rani & Rajendhar"]:::branch1
+    G1E --> Ashritha("Ashritha"):::branch1
+
+    C1B --> G1F["Asha & Damodar"]:::branch1
+    G1F --> SaiBharath("Sai Bharath"):::branch1
+    G1F --> G1K["Bhavya & Shiva"]:::branch1
+    G1K --> Advitha("Advitha"):::branch1
+
+    C1B --> G1G["Uma & Prasad"]:::branch1
+    G1G --> G1H["Prathibha & Gowtham"]:::branch1
+    G1H --> Jasvik("Jasvik"):::branch1
+    G1H --> Hayan("Hayan"):::branch1
+    G1G --> Reetesh("Sai Reetesh"):::branch1
+
+    %% BRANCH 2 - RIGHT CIRCLE
+    GP2 --> C2A["Raja & Mohan"]:::branch2
+    GP2 --> C2B["Aruna & Ajay"]:::branch2
+    GP2 --> C2C["Jyothi & Ravinder"]:::branch2
+    GP2 --> C2D["Rajyam & Raghav Rao"]:::branch2
+
+    C2A --> G2A["Rajani"]:::branch2
+    C2A --> Kiran("Kiran"):::branch2
+    C2A --> G2B["Naveen & Ramya"]:::branch2
+
+    C2B --> G2C["Manasa & Sathish"]:::branch2
+    G2C --> Anshu("Anshu"):::branch2
+    G2C --> Subbu("Subbu"):::branch2
+
+    C2C --> G2D["Swathi & Sunil"]:::branch2
+    G2D --> Adithi("Adithi"):::branch2
+    G2D --> Siddhan("Siddhan"):::branch2
+
+    C2C --> G2E["Pradeep & Sravani"]:::branch2
+    G2E --> Medha("Sri Medha"):::branch2
+    G2E --> Moksha("Sri Moksha"):::branch2
+
+    C2D --> G2F["Vardhini & Pranav"]:::branch2
+    G2F --> Samanvi("Aarya Samanvi"):::branch2
+    C2D --> Vishnu("Vishnu"):::branch2
+
+    %% BRANCH 3 - BOTTOM CIRCLE
+    GP3 --> C3A["Laxmi & Veeresh Babu"]:::branch3
+    GP3 --> C3B["<b>Laxminarayana & Neeraja</b>"]:::branch3.cross
+    GP3 --> C3C["<b>Ramesh & Rajani</b>"]:::branch3.cross
+
+    C3A --> G3A["Varun & Sunitha"]:::branch3
+    G3A --> Kruthi("Kruthi"):::branch3
+    G3A --> Naira("Naira"):::branch3
+    G3A --> Vihan2("Vihan Nandhan"):::branch3
+
+    C3A --> G3B["Divya & Arun"]:::branch3
+    G3B --> Manswini("Manswini"):::branch3
+    G3B --> Varshini("Varshini"):::branch3
+
+    C3A --> G3C["Rahul & Manivitha"]:::branch3
+
+    C3B --> G3D["Revanth & Nandhini"]:::branch3
+    C3B --> G3E["Sneha & Gowtham"]:::branch3
+    G3E --> Shlokha("Shlokha"):::branch3
+    C3B --> G3F["Aishwarya & Chandrashekhar"]:::branch3
+    G3F --> Aarav("Aarav"):::branch3
+    G3F --> Aaryan("Aaryan"):::branch3
+
+    C3C --> Rushali("Rushali"):::branch3
+    C3C --> Ronith("Ronith"):::branch3
+
+    %% CROSS-BRANCH CONNECTIONS
+    G1C -.- C3B
+    G2A -.- C3C
+
+    %% COLOR LEGEND - TOP RIGHT
+    LEGEND["<b>FAMILY TREE LEGEND</b><br>---<br>
+    <span style='background:#FFD700; padding:0 5px'>■</span> Family Founders<br>
+    <span style='background:#B0E0E6; padding:0 5px'>■</span> Rajalingam Branch<br>
+    <span style='background:#98FB98; padding:0 5px'>■</span> Eshwaraiah Branch<br>
+    <span style='background:#FFB6C1; padding:0 5px'>■</span> Janardhan Branch<br>
+    <span style='color:#0000FF; padding:0 5px'>---</span> Cross-Branch Couples"];
+    style LEGEND fill:#FFF,stroke:#333,stroke-width:1px,rx:5px,ry:5px;
