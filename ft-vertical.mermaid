@@ -1,113 +1,189 @@
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#FFF5E4', 'edgeLabelBackground':'#FFF', 'fontFamily': 'verdana'}}}%%
+---
+config:
+  theme: base
+  themeVariables:
+    primaryColor: '#FFF5E4'
+    edgeLabelBackground: '#FFF'
+    fontFamily: verdana
+---
 flowchart TD
-    %% Color Definitions
-    classDef root fill:#FFD700,stroke:#DAA520,stroke-width:3px;
-    classDef branch1 fill:#B0E0E6,stroke:#1E90FF,stroke-width:2px;
-    classDef branch2 fill:#98FB98,stroke:#2E8B57,stroke-width:2px;
-    classDef branch3 fill:#FFB6C1,stroke:#FF0000,stroke-width:2px;
-    classDef cross fill:none,stroke:#0000FF,stroke-width:3px,stroke-dasharray:3 3;
-
-    %% ROOT GENERATION - CENTER
-    ROOT["<b>Yesireddy Laxminarayana & Yellamma</b>"]:::root
-
-    %% BRANCHES - CIRCULAR LAYOUT
-    ROOT --> GP1["<b>Yesireddy Rajalingam & Kamalamma</b>"]:::branch1
-    ROOT --> GP2["<b>Yesireddy Eshwaraiah & Savithriamma</b>"]:::branch2
-    ROOT --> GP3["<b>Yesireddy Janardhan & Yeshodhamma</b>"]:::branch3
-
-    %% BRANCH 1 - LEFT CIRCLE
-    GP1 --> C1A["Medishetty Swarojini & Raghollu"]:::branch1
-    GP1 --> C1B["Bedadha Swathanthra & Chennaiah"]:::branch1
-
-    C1A --> G1A["Rajesh & Raja"]:::branch1
-    G1A --> Sai("Sai"):::branch1
-    G1A --> Swathi("Swathi"):::branch1
-    G1A --> Sahithi("Sahithi"):::branch1
-
-    C1A --> G1B["Deepa & Sathish"]:::branch1
-    G1B --> Ashwith("Ashwith"):::branch1
-    G1B --> Vihan("Vihan"):::branch1
-
-    C1B --> G1C["Yesireddy Neeraja"]:::branch1
-    C1B --> G1D["Anil & Prashanthi"]:::branch1
-    G1D --> Pragnya("Pragnya"):::branch1
-    G1D --> Akshaya("Akshaya Sri"):::branch1
-
-    C1B --> G1E["Rani & Rajendhar"]:::branch1
-    G1E --> Ashritha("Ashritha"):::branch1
-
-    C1B --> G1F["Asha & Damodar"]:::branch1
-    G1F --> SaiBharath("Sai Bharath"):::branch1
-    G1F --> G1K["Bhavya & Shiva"]:::branch1
-    G1K --> Advitha("Advitha"):::branch1
-
-    C1B --> G1G["Uma & Prasad"]:::branch1
-    G1G --> G1H["Prathibha & Gowtham"]:::branch1
-    G1H --> Jasvik("Jasvik"):::branch1
-    G1H --> Hayan("Hayan"):::branch1
-    G1G --> Reetesh("Sai Reetesh"):::branch1
-
-    %% BRANCH 2 - RIGHT CIRCLE
-    GP2 --> C2A["Raja & Mohan"]:::branch2
-    GP2 --> C2B["Aruna & Ajay"]:::branch2
-    GP2 --> C2C["Jyothi & Ravinder"]:::branch2
-    GP2 --> C2D["Rajyam & Raghav Rao"]:::branch2
-
-    C2A --> G2A["Rajani"]:::branch2
-    C2A --> Kiran("Kiran"):::branch2
-    C2A --> G2B["Naveen & Ramya"]:::branch2
-
-    C2B --> G2C["Manasa & Sathish"]:::branch2
-    G2C --> Anshu("Anshu"):::branch2
-    G2C --> Subbu("Subbu"):::branch2
-
-    C2C --> G2D["Swathi & Sunil"]:::branch2
-    G2D --> Adithi("Adithi"):::branch2
-    G2D --> Siddhan("Siddhan"):::branch2
-
-    C2C --> G2E["Pradeep & Sravani"]:::branch2
-    G2E --> Medha("Sri Medha"):::branch2
-    G2E --> Moksha("Sri Moksha"):::branch2
-
-    C2D --> G2F["Vardhini & Pranav"]:::branch2
-    G2F --> Samanvi("Aarya Samanvi"):::branch2
-    C2D --> Vishnu("Vishnu"):::branch2
-
-    %% BRANCH 3 - BOTTOM CIRCLE
-    GP3 --> C3A["Laxmi & Veeresh Babu"]:::branch3
-    GP3 --> C3B["<b>Laxminarayana & Neeraja</b>"]:::branch3.cross
-    GP3 --> C3C["<b>Ramesh & Rajani</b>"]:::branch3.cross
-
-    C3A --> G3A["Varun & Sunitha"]:::branch3
-    G3A --> Kruthi("Kruthi"):::branch3
-    G3A --> Naira("Naira"):::branch3
-    G3A --> Vihan2("Vihan Nandhan"):::branch3
-
-    C3A --> G3B["Divya & Arun"]:::branch3
-    G3B --> Manswini("Manswini"):::branch3
-    G3B --> Varshini("Varshini"):::branch3
-
-    C3A --> G3C["Rahul & Manivitha"]:::branch3
-
-    C3B --> G3D["Revanth & Nandhini"]:::branch3
-    C3B --> G3E["Sneha & Gowtham"]:::branch3
-    G3E --> Shlokha("Shlokha"):::branch3
-    C3B --> G3F["Aishwarya & Chandrashekhar"]:::branch3
-    G3F --> Aarav("Aarav"):::branch3
-    G3F --> Aaryan("Aaryan"):::branch3
-
-    C3C --> Rushali("Rushali"):::branch3
-    C3C --> Ronith("Ronith"):::branch3
-
-    %% CROSS-BRANCH CONNECTIONS
-    G1C -.- C3B
-    G2A -.- C3C
-
-    %% COLOR LEGEND - TOP RIGHT
-    LEGEND["<b>FAMILY TREE LEGEND</b><br>---<br>
-    <span style='background:#FFD700; padding:0 5px'>■</span> Family Founders<br>
-    <span style='background:#B0E0E6; padding:0 5px'>■</span> Rajalingam Branch<br>
-    <span style='background:#98FB98; padding:0 5px'>■</span> Eshwaraiah Branch<br>
-    <span style='background:#FFB6C1; padding:0 5px'>■</span> Janardhan Branch<br>
-    <span style='color:#0000FF; padding:0 5px'>---</span> Cross-Branch Couples"];
-    style LEGEND fill:#FFF,stroke:#333,stroke-width:1px,rx:5px,ry:5px;
+ subgraph BR1["<b>RAJALINGAM BRANCH</b>"]
+    direction TB
+        GP1["Yesireddy Rajalingam & Kamalamma"]
+        C1A["Medishetty Swarojini & Raghollu"]
+        C1B["Bedadha Swathanthra & Chennaiah"]
+        G1A["Rajesh & Raja"]
+        Sai("Sai")
+        Swathi("Swathi")
+        Sahithi("Sahithi")
+        G1B["Deepa & Sathish"]
+        Ashwith("Ashwith")
+        Vihan("Vihan")
+        G1C["Yesireddy Neeraja"]
+        G1D["Anil & Prashanthi"]
+        Pragnya("Pragnya")
+        Akshaya("Akshaya Sri")
+        G1E["Rani & Rajendhar"]
+        Ashritha("Ashritha")
+        G1F["Asha & Damodar"]
+        SaiBharath("Sai Bharath")
+        G1K["Bhavya & Shiva"]
+        Advitha("Advitha")
+        G1G["Uma & Prasad"]
+        G1H["Prathibha & Gowtham"]
+        Jasvik("Jasvik")
+        Hayan("Hayan")
+        Reetesh("Sai Reetesh")
+  end
+ subgraph BR2["<b>ESHWARAIAH BRANCH</b>"]
+    direction TB
+        GP2["Yesireddy Eshwaraiah & Savithriamma"]
+        C2A["Raja & Mohan"]
+        C2B["Aruna & Ajay"]
+        C2C["Jyothi & Ravinder"]
+        C2D["Rajyam & Raghav Rao"]
+        G2A["Rajani"]
+        Kiran("Kiran")
+        G2B["Naveen & Ramya"]
+        G2C["Manasa & Sathish"]
+        Anshu("Anshu")
+        Subbu("Subbu")
+        G2D["Swathi & Sunil"]
+        Adithi("Adithi")
+        Siddhan("Siddhan")
+        G2E["Pradeep & Sravani"]
+        Medha("Sri Medha")
+        Moksha("Sri Moksha")
+        G2F["Vardhini & Pranav"]
+        Samanvi("Aarya Samanvi")
+        Vishnu("Vishnu")
+  end
+ subgraph BR3["<b>JANARDHAN BRANCH</b>"]
+    direction TB
+        GP3["Yesireddy Janardhan & Yeshodhamma"]
+        C3A["Laxmi & Veeresh Babu"]
+        C3B["Laxminarayana & Neeraja"]
+        C3C["Ramesh & Rajani"]
+        C3D["Sumathi & Chandrashekhar"]
+        G3A["Varun & Sunitha"]
+        Kruthi("Kruthi")
+        Naira("Naira")
+        Vihan2("Vihan Nandhan")
+        G3B["Divya & Arun"]
+        Manswini("Manswini")
+        Varshini("Varshini")
+        G3C["Rahul & Manivitha"]
+        G3D["Revanth & Nandhini"]
+        G3E["Sneha & Gowtham"]
+        Shlokha("Shlokha")
+        G3F["Aishwarya & Chandrashekhar"]
+        Aarav("Aarav")
+        Aaryan("Aaryan")
+        Rushali("Rushali")
+        Ronith("Ronith")
+  end
+    GP1 --> C1A & C1B
+    C1A --> G1A & G1B
+    G1A --> Sai & Swathi & Sahithi
+    G1B --> Ashwith & Vihan
+    C1B --> G1C & G1D & G1E & G1F & G1G
+    G1D --> Pragnya & Akshaya
+    G1E --> Ashritha
+    G1F --> SaiBharath & G1K
+    G1K --> Advitha
+    G1G --> G1H & Reetesh
+    G1H --> Jasvik & Hayan
+    GP2 --> C2A & C2B & C2C & C2D
+    C2A --> G2A & Kiran & G2B
+    C2B --> G2C
+    G2C --> Anshu & Subbu
+    C2C --> G2D & G2E
+    G2D --> Adithi & Siddhan
+    G2E --> Medha & Moksha
+    C2D --> G2F & Vishnu
+    G2F --> Samanvi
+    GP3 --> C3A & C3B & C3C & C3D
+    C3A --> G3A & G3B & G3C
+    G3A --> Kruthi & Naira & Vihan2
+    G3B --> Manswini & Varshini
+    C3B --> G3D & G3E & G3F
+    G3E --> Shlokha
+    G3F --> Aarav & Aaryan
+    C3C --> Rushali & Ronith
+    ROOT["<b>Yesireddy Laxminarayana &amp; Yellamma</b>"] --> BR1 & BR2 & BR3
+     ROOT:::root
+     GP1:::branch1
+     C1A:::branch1
+     C1B:::branch1
+     G1A:::branch1
+     Sai:::branch1
+     Swathi:::branch1
+     Sahithi:::branch1
+     G1B:::branch1
+     Ashwith:::branch1
+     Vihan:::branch1
+     G1C:::branch1.cross
+     G1D:::branch1
+     Pragnya:::branch1
+     Akshaya:::branch1
+     G1E:::branch1
+     Ashritha:::branch1
+     G1F:::branch1
+     SaiBharath:::branch1
+     G1K:::branch1
+     Advitha:::branch1
+     G1G:::branch1
+     G1H:::branch1
+     Jasvik:::branch1
+     Hayan:::branch1
+     Reetesh:::branch1
+     GP2:::branch2
+     C2A:::branch2
+     C2B:::branch2
+     C2C:::branch2
+     C2D:::branch2
+     G2A:::branch2.cross
+     Kiran:::branch2
+     G2B:::branch2
+     G2C:::branch2
+     Anshu:::branch2
+     Subbu:::branch2
+     G2D:::branch2
+     Adithi:::branch2
+     Siddhan:::branch2
+     G2E:::branch2
+     Medha:::branch2
+     Moksha:::branch2
+     G2F:::branch2
+     Samanvi:::branch2
+     Vishnu:::branch2
+     GP3:::branch3
+     C3A:::branch3
+     C3B:::branch3.cross
+     C3C:::branch3.cross
+     C3D:::branch3
+     G3A:::branch3
+     Kruthi:::branch3
+     Naira:::branch3
+     Vihan2:::branch3
+     G3B:::branch3
+     Manswini:::branch3
+     Varshini:::branch3
+     G3C:::branch3
+     G3D:::branch3
+     G3E:::branch3
+     Shlokha:::branch3
+     G3F:::branch3
+     Aarav:::branch3
+     Aaryan:::branch3
+     Rushali:::branch3
+     Ronith:::branch3
+    classDef root fill:#FFD700,stroke:#DAA520,stroke-width:3px
+    classDef branch1 fill:#B0E0E6,stroke:#1E90FF,stroke-width:2px
+    classDef branch2 fill:#98FB98,stroke:#2E8B57,stroke-width:2px
+    classDef branch3 fill:#FFB6C1,stroke:#FF0000,stroke-width:2px
+    classDef cross fill:none,stroke:#0000FF,stroke-width:3px,stroke-dasharray:3 3
+    classDef container fill:none,stroke:#333,stroke-width:3px,stroke-dasharray:0
+    style BR1 fill:#B0E0E620,stroke:#1E90FF,stroke-width:3px
+    style BR2 fill:#98FB9820,stroke:#2E8B57,stroke-width:3px
+    style BR3 fill:#FFB6C120,stroke:#FF0000,stroke-width:3px
