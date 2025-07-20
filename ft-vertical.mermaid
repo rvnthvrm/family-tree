@@ -9,79 +9,78 @@ config:
 flowchart TD
  subgraph BR1["<b>RAJALINGAM BRANCH</b>"]
     direction TB
-        GP1["Yesireddy Rajalingam & Kamalamma"]
-        C1A["Medishetty Swarojini & Raghollu"]
-        C1B["Bedadha Swathanthra & Chennaiah"]
-        G1A["Rajesh & Raja"]
+        GP1("Yesireddy Rajalingam & Kamalamma")
+        C1A("Medishetty Swarojini & Raghollu")
+        C1B("Bedadha Swathanthra & Chennaiah")
+        G1A("Rajesh & Raja")
         Sai("Sai")
         Swathi("Swathi")
         Sahithi("Sahithi")
-        G1B["Deepa & Sathish"]
+        G1B("Deepa & Sathish")
         Ashwith("Ashwith")
         Vihan("Vihan")
-        G1C["Yesireddy Neeraja"]
-        G1D["Anil & Prashanthi"]
+        G1C("Yesireddy Neeraja")
+        G1D("Anil & Prashanthi")
         Pragnya("Pragnya")
         Akshaya("Akshaya Sri")
-        G1E["Rani & Rajendhar"]
+        G1E("Rani & Rajendhar")
         Ashritha("Ashritha")
-        G1F["Asha & Damodar"]
+        G1F("Asha & Damodar")
         SaiBharath("Sai Bharath")
-        G1K["Bhavya & Shiva"]
+        G1K("Bhavya & Shiva")
         Advitha("Advitha")
-        G1G["Uma & Prasad"]
-        G1H["Prathibha & Gowtham"]
+        G1G("Uma & Prasad")
+        G1H("Prathibha & Gowtham")
         Jasvik("Jasvik")
         Hayan("Hayan")
         Reetesh("Sai Reetesh")
   end
  subgraph BR2["<b>ESHWARAIAH BRANCH</b>"]
     direction TB
-        GP2["Yesireddy Eshwaraiah & Savithriamma"]
-        C2A["Raja & Mohan"]
-        C2B["Aruna & Ajay"]
-        C2C["Jyothi & Ravinder"]
-        C2D["Rajyam & Raghav Rao"]
-        G2A["Rajani"]
+        GP2("Yesireddy Eshwaraiah & Savithriamma")
+        C2A("Raja & Mohan")
+        C2B("Aruna & Ajay")
+        C2C("Jyothi & Ravinder")
+        C2D("Rajyam & Raghav Rao")
+        G2A("Rajani")
         Kiran("Kiran")
-        G2B["Naveen & Ramya"]
-        G2C["Manasa & Sathish"]
+        G2B("Naveen & Ramya")
+        G2C("Manasa & Sathish")
         Anshu("Anshu")
         Subbu("Subbu")
-        G2D["Swathi & Sunil"]
+        G2D("Swathi & Sunil")
         Adithi("Adithi")
         Siddhan("Siddhan")
-        G2E["Pradeep & Sravani"]
+        G2E("Pradeep & Sravani")
         Medha("Sri Medha")
         Moksha("Sri Moksha")
-        G2F["Vardhini & Pranav"]
+        G2F("Vardhini & Pranav")
         Samanvi("Aarya Samanvi")
         Vishnu("Vishnu")
   end
  subgraph BR3["<b>JANARDHAN BRANCH</b>"]
     direction TB
-        GP3["Yesireddy Janardhan & Yeshodhamma"]
-        C3A["Laxmi & Veeresh Babu"]
-        C3B["Laxminarayana & Neeraja"]
-        C3C["Ramesh & Rajani"]
-        C3D["Sumathi & Chandrashekhar"]
-        G3A["Varun & Sunitha"]
-        Kruthi("Kruthi")
-        Naira("Naira")
+        GP3("Yesireddy Janardhan & Yeshodhamma")
+        C3A("Laxmi & Veeresh Babu")
+        C3B("Laxminarayana & Neeraja")
+        C3C("Ramesh & Rajani")
+        G3A("Varun & Sunitha")
+        Kruthi("Kruthi Naira")
         Vihan2("Vihan Nandhan")
-        G3B["Divya & Arun"]
+        G3B("Divya & Arun")
         Manswini("Manswini")
         Varshini("Varshini")
-        G3C["Rahul & Manivitha"]
-        G3D["Revanth & Nandhini"]
-        G3E["Sneha & Gowtham"]
+        G3C("Rahul & Manivitha")
+        G3D("Revanth & Nandhini")
+        G3E("Sneha & Gowtham")
         Shlokha("Shlokha")
-        G3F["Aishwarya & Chandrashekhar"]
+        G3F("Aishwarya & Chandrashekhar")
         Aarav("Aarav")
         Aaryan("Aaryan")
         Rushali("Rushali")
         Ronith("Ronith")
   end
+    ROOT("<center><b>Yesireddy Laxminarayana &amp; Yellamma</b></center>") --> GP1 & GP2 & GP3
     GP1 --> C1A & C1B
     C1A --> G1A & G1B
     G1A --> Sai & Swathi & Sahithi
@@ -102,16 +101,14 @@ flowchart TD
     G2E --> Medha & Moksha
     C2D --> G2F & Vishnu
     G2F --> Samanvi
-    GP3 --> C3A & C3B & C3C & C3D
+    GP3 --> C3A & C3B & C3C
     C3A --> G3A & G3B & G3C
-    G3A --> Kruthi & Naira & Vihan2
+    G3A --> Kruthi & Vihan2
     G3B --> Manswini & Varshini
     C3B --> G3D & G3E & G3F
     G3E --> Shlokha
     G3F --> Aarav & Aaryan
     C3C --> Rushali & Ronith
-    ROOT["<b>Yesireddy Laxminarayana &amp; Yellamma</b>"] --> BR1 & BR2 & BR3
-     ROOT:::root
      GP1:::branch1
      C1A:::branch1
      C1B:::branch1
@@ -161,10 +158,8 @@ flowchart TD
      C3A:::branch3
      C3B:::branch3.cross
      C3C:::branch3.cross
-     C3D:::branch3
      G3A:::branch3
      Kruthi:::branch3
-     Naira:::branch3
      Vihan2:::branch3
      G3B:::branch3
      Manswini:::branch3
@@ -178,12 +173,12 @@ flowchart TD
      Aaryan:::branch3
      Rushali:::branch3
      Ronith:::branch3
+     ROOT:::root
     classDef root fill:#FFD700,stroke:#DAA520,stroke-width:3px
     classDef branch1 fill:#B0E0E6,stroke:#1E90FF,stroke-width:2px
     classDef branch2 fill:#98FB98,stroke:#2E8B57,stroke-width:2px
     classDef branch3 fill:#FFB6C1,stroke:#FF0000,stroke-width:2px
     classDef cross fill:none,stroke:#0000FF,stroke-width:3px,stroke-dasharray:3 3
-    classDef container fill:none,stroke:#333,stroke-width:3px,stroke-dasharray:0
     style BR1 fill:#B0E0E620,stroke:#1E90FF,stroke-width:3px
     style BR2 fill:#98FB9820,stroke:#2E8B57,stroke-width:3px
     style BR3 fill:#FFB6C120,stroke:#FF0000,stroke-width:3px
