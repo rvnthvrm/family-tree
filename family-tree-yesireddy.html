@@ -287,6 +287,11 @@
       pointer-events: none;
     }
     
+    .spoke {
+      stroke: rgba(255, 255, 255, 0.2);
+      stroke-width: 2;
+    }
+    
     @keyframes pulse {
       0% { opacity: 0.7; }
       50% { opacity: 1; }
@@ -331,7 +336,7 @@
   <div class="container">
     <header>
       <h1>Yesireddy Family Tree</h1>
-      <p class="subtitle">A rotating visualization of the Yesireddy family spanning three generations. Explore branches, relationships, and connections.</p>
+      <p class="subtitle">family spanning five generations</p>
     </header>
     
     <div class="visualization-container">
@@ -408,9 +413,6 @@
       </div>
     </div>
     
-    <div class="footer">
-      <p>© 2023 Yesireddy Family Tree Visualization | Created with D3.js</p>
-    </div>
   </div>
   
   <div class="tooltip"></div>
@@ -418,7 +420,7 @@
   <script>
     // Family tree data with corrected generations
     const familyData = {
-      "name": "Yesireddy Laxminarayana & Yellamma",
+      "name": "Laxminarayana & Yellamma",
       "branch": "founder",
       "generation": 0,
       "children": [
@@ -691,6 +693,19 @@
     const root = d3.hierarchy(familyData);
     cluster(root);
     
+    // Correct generation placement for all nodes
+    function correctGenerations(node) {
+      if (node.depth === 0) return;
+      
+      // Set generation based on depth
+      node.data.generation = node.depth;
+      
+      if (node.children) {
+        node.children.forEach(child => correctGenerations(child));
+      }
+    }
+    correctGenerations(root);
+    
     // Get branch color
     function getNodeBranchColor(d) {
       switch (d.data.branch) {
@@ -720,8 +735,52 @@
       if (gen === 1) return 14;    // 1st Generation
       if (gen === 2) return 11;    // 2nd Generation
       if (gen === 3) return 8;     // 3rd Generation
-      return 6;                    // 4th+ Generation
+      if (gen === 4) return 6;     // 4th Generation
+      return 5;                    // 5th Generation
     }
+    
+    // Draw generation circles and labels - CORRECTED VERSION
+    const generations = [0, 1, 2, 3, 4, 5];
+    const radiusStep = radius / 6;  // Adjusted for proper spacing
+    
+    generations.forEach((gen, i) => {
+        const r = i * radiusStep;
+        
+        // Draw circle for all generations except the center (gen 0)
+        if (i > 0) {
+            svg.append("circle")
+                .attr("r", r)
+                .attr("fill", "none")
+                .attr("stroke", "rgba(255, 255, 255, 0.1)")
+                .attr("stroke-width", 1);
+        }
+        
+        // Add generation label
+        if (gen > 0) {
+            svg.append("text")
+                .attr("class", "generation-label")
+                .attr("dy", -r - 5)
+                .text(
+                    gen === 1 ? "1st Generation" : 
+                    gen === 2 ? "2nd Generation" : 
+                    gen === 3 ? "3rd Generation" : 
+                    gen === 4 ? "4th Generation" : 
+                    gen === 5 ? "5th Generation" : ""
+                );
+        }
+    });
+    
+    // Add spokes to divide branches
+    const spokeAngles = [0, 120, 240];
+    spokeAngles.forEach(angle => {
+      const radian = angle * (Math.PI / 180);
+      svg.append("line")
+        .attr("class", "spoke")
+        .attr("x1", 0)
+        .attr("y1", 0)
+        .attr("x2", radius * Math.sin(radian))
+        .attr("y2", -radius * Math.cos(radian));
+    });
     
     // Draw links
     const links = svg.selectAll("path.link")
@@ -827,7 +886,8 @@
         if (gen === 0) return "14px";   // Founder
         if (gen === 1) return "13px";   // 1st Generation
         if (gen === 2) return "11px";   // 2nd Generation
-        return "10px";                  // 3rd+ Generation
+        if (gen === 3) return "10px";   // 3rd Generation
+        return "9px";                   // 4th+ Generation
       })
       .attr("font-weight", d => d.data.generation === 0 ? "bold" : "normal")
       .attr("fill", "#fff")
@@ -837,39 +897,11 @@
         return (angle > 90 && angle < 270) ? "rotate(180)" : null;
       });
     
-    // Add generation circles and labels
-    const generations = [0, 1, 2, 3, 4];
-    const radiusStep = radius / 5;
-    
-    generations.forEach((gen, i) => {
-      const r = i * radiusStep + radiusStep;
-      
-      // Draw circle
-      svg.append("circle")
-        .attr("r", r)
-        .attr("fill", "none")
-        .attr("stroke", "rgba(255, 255, 255, 0.1)")
-        .attr("stroke-width", 1);
-      
-      // Add generation label
-      if (gen > 0) {
-        svg.append("text")
-          .attr("class", "generation-label")
-          .attr("dy", -r - 5)
-          .text(
-            gen === 1 ? "1st Generation" : 
-            gen === 2 ? "2nd Generation" : 
-            gen === 3 ? "3rd Generation" : 
-            gen === 4 ? "4th Generation" : ""
-          );
-      }
-    });
-    
     // Zoom functionality
     let currentTransform = d3.zoomIdentity;
     let isRotating = true;
     let rotationAngle = 0;
-    const rotationSpeed = 0.2; // degrees per frame
+    const rotationSpeed = 0.08; // Slower rotation for better viewing
     
     // Create a container for the rotating elements
     const rotationGroup = svg.append("g")
