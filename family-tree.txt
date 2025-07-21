@@ -1,76 +1,84 @@
-1. Yesireddy Rajalingam (married to) Kamalamma
-    - Medishetty Swarojini (daughter) married to Medishetty Raghollu
-        - Rajesh (son) married to Raja
-            - Sai (daughter)
-            - Swathi (daughter)
-            - Sahithi (son)
-        - Deepa (daughter) married to Sathish
-            - Ashwith (son)
-            - Vihan (son)
-    - Bedadha Swathanthra (daughter) married to Bedadha Chennaiah
-        - Yesireddy Neeraja (daughter) married to Yesireddy Laxminarayana
-            - Yesireddy Revanth (son) married to Nandhini
-            - Natte Sneha (daughter) married to Gowtham
-                - Shlokha (daughter)
-            - Thippani Aishwarya (daughter) married to Chandrashekhar
-                - Aarav (son)
-                - Aaryan (son)
-        - Bedadha Anil (son) married to Prashanthi
-            - Pragnya (daughter)
-            - Akshaya Sri (daughter)
-        - Vadde Rani (daughter) married to Vadde Rajendhar
-            - Ashritha (daughter)
-        - Akkala Asha (daughter) married to Akkala Damodar
-            - Bollugoddu Bhavya (daughter) married to Shiva
-                - Advitha (daughter)
-            - Sai Bharath (son)
-        - Ankathi Uma (daughter) married to Ankathi Prasad
-            - Mudidha Prathibha (daughter) married to Gowtham
-                - Jasvik (son)
-                - Hayan (son)
-            - Sai Reetesh (son)
+Founder Laxminarayana & Yellama
 
-2. Yesireddy Eshwaraiah (married to) Savithriamma
-    - Appani Raja (daughter) married to Appani Mohan
-        - Yesireddy Rajani (daughter) married to Yesireddy Ramesh
-            - Yesireddy Rushali (daughter)
-            - Yesireddy Ronith (son)
-        - Appani Kiran (son)
-        - Appani Naveen (son) married to Ramya
-    - Diddi Aruna (daughter) married to Diddi Ajay
-        - Nandre Manasa (daughter) married to Sathish
-            - Anshu (son)
-            - Subbu (daughter)
-    - Vadde Jyothi (daughter) married to Vadde Ravinder
-        - Eerla Swathi (daughter) married to Sunil
-            - Adithi (daughter)
-            - Siddhan (son)
-        - Vadde Pradeep (son) married to Sravani
-            - Sri Medha (daughter)
-            - Sri Moksha (daughter)
-    - Kathika Rajyam (daughter) married to Kathika Raghav Rao
-        - Jaya Vardhini (daughter) married to Pranav
-            - Aarya Samanvi (daughter)
-        - Kathika Vishnu (son)
+Grandparents
+1.  Rajalingam (married to) Kamalamma (Generation 1)
+    -  Swarojini (daughter) married to  Raghollu (Generation 2)
+        - Rajesh (son) married to Raja (Generation 3)
+            - Sai (daughter) (Generation 4)
+            - Swathi (daughter) (Generation 4)
+            - Sahithi (son) (Generation 4)
+        - Deepa (daughter) married to Sathish (Generation 3)
+            - Ashwith (son) (Generation 4)
+            - Vihan (son) (Generation 4)
+    -  Swathanthra (daughter) married to  Chennaiah (Generation 2)
+        -  Neeraja (daughter) married to  Laxminarayana  (Generation 3)
+            -  Revanth (son) married to Nandhini (Generation 4)
+                 -  Z (Waiting)
+            -  Sneha (daughter) married to Gowtham (Generation 4)
+                - Shlokha (daughter) (Generation 5)
+                - X(Waiting) (Generation 5)
+            -  Aishwarya (daughter) married to Chandrashekhar (Generation 4)
+                - Aarav (son) (Generation 5)
+                - Aaryan (son) (Generation 5)
+        -  Anil (son) married to Prashanthi  (Generation 3)
+            - Pragnya (daughter) (Generation 4)
+            - Akshaya Sri (daughter) (Generation 4)
+        -  Rani (daughter) married to  Rajendhar  (Generation 3)
+            - Ashritha (daughter) (Generation 4)
+        -  Asha (daughter) married to  Damodar  (Generation 3)
+            -  Bhavya (daughter) married to Shiva (Generation 4)
+                - Advitha (daughter) (Generation 5)
+                - Y (Waiting) (Generation 5)
+            - SaiBharath (son)
+        -  Uma (daughter) married to  Prasad  (Generation 3)
+            -  Prathibha (daughter) married to Gowtham (Generation 4)
+                - Jasvik (son) (Generation 5)
+                - Hayan (son) (Generation 5)
+            - SaiReetesh (son) (Generation 4)
 
-3. Yesireddy Janardhan (married to) Yeshodhamma
-    - Accha Laxmi (daughter) married to Acha Veeresh Babu
-        - Accha Varun (son) married to Sunitha
-            - Kruthi (daughter)
-            - Naira (daughter)
-            - Vihan Nandhan (son)
-        - Karnam Divya (daughter) married to Arun
-            - Manswini (daughter)
-            - Varshini (daughter)
-        - Accha Rahul (son) married to Manivitha
-    - Yesireddy Laxminarayana (son) married to Yesireddy Neeraja
-        - Yesireddy Revanth (son) married to Nandhini
-        - Natte Sneha (daughter) married to Gowtham
-            - Shlokha (daughter)
-        - Thippani Aishwarya (daughter) married to Chandrashekhar
-            - Aarav (son)
-            - Aaryan (son)
-    - Yesireddy Ramesh (son) married to Yesireddy Rajani
-        - Yesireddy Rushali (daughter)
-        - Yesireddy Ronith (son)
-    - Narisetty Sumathi (daughter) married to Narisetty Chandrashekhar
+2.  Eshwaraiah (married to) Savithriamma (Generation 1)
+
+    -  Raja (daughter) married to  Mohan (Generation 2)
+        -  Rajani (daughter) married to  Ramesh  (Generation 3)
+            -  Rushali (daughter) (Generation 4)
+            -  Ronith (son) (Generation 4)
+        -  Kiran (son)  (Generation 3)
+        -  Naveen (son) married to Ramya  (Generation 3)
+    -  Aruna (daughter) married to  Ajay (Generation 2)
+        - Manasa (daughter) married to Sathish  (Generation 3)
+            - Anshu (son) (Generation 4)
+            - Subbu (daughter) (Generation 4)
+    -  Jyothi (daughter) married to  Ravinder (Generation 2)
+        - Swathi (daughter) married to Sunil  (Generation 3)
+            - Adithi (daughter) (Generation 4)
+            - Siddhan (son) (Generation 4)
+        -  Pradeep (son) married to Sravani  (Generation 3)
+            - SriMedha (daughter) (Generation 4)
+            - SriMoksha (daughter) (Generation 4)
+    -  Rajyam (daughter) married to  Raghav Rao (Generation 2)
+        - Jaya Vardhini (daughter) married to Pranav  (Generation 3)
+            - Aarya Samanvi (daughter)  (Generation 4)
+        -  Vishnu (son)  (Generation 3)
+
+3.  Janardhan (married to) Yeshodhamma (Generation 1)
+
+    -  Laxmi (daughter) married to Acha Veeresh Babu (Generation 2)
+        -  Varun (son) married to Sunitha  (Generation 3)
+            - KruthiNaira (daughter) (Generation 4)
+            - VihanNandhan (son) (Generation 4)
+        - Divya (daughter) married to Arun  (Generation 3)
+            - Manswini (daughter) (Generation 4)
+            - Varshini (daughter) (Generation 4)
+        -  Rahul (son) married to Manivitha  (Generation 3)
+    -  Laxminarayana (son) married to  Neeraja (Generation 2 married to  Generation 3)
+        -  Revanth (son) married to Nandhini (Generation 4)
+            -  Z (Waiting) (Generation 5)
+        -  Sneha (daughter) married to Gowtham (Generation 4)
+            - Shlokha (daughter) (Generation 5)
+        -  Aishwarya (daughter) married to Chandrashekhar (Generation 4)
+            - Aarav (son) (Generation 5)
+            - Aaryan (son) (Generation 5)
+    -  Ramesh (son) married to  Rajani (Generation 2 married to  Generation 3)
+        -  Rushali (daughter) (Generation 4)
+        -  Ronith (son) (Generation 4)
+    - Sumathi (Daughter) married to Chandrashekhar (Generation 2)
